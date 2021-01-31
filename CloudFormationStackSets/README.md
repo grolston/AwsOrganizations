@@ -1,3 +1,3 @@
 # Organizations CloudFormation StackSets
 
-TODO Document Steps
+AWS Organization StackSets is primarily configured in the web console. Please visit blog post for instructions.
