@@ -1,0 +1,3 @@
+Deploying AWS config aggregator as an organization integrated service allows you to enable AWS config services automatically in across all your accounts. AWS Config aggregator is deployed within a specific region, but it gives the option to deploy the aggregator to all accounts/regions and collect the details back to the single region you deployed in. AWS Config Aggregator can deploy Conformance packs and Rules to all accounts/regions centrally. _To meet CIS v1.2.0 or PCI DSS v3.2.1 compliance within your AWS Account you will need to have AWS Config deployed._ AWS Config is required for deploying AWS Security Hub and AWS Audit Manager.
+
+> **Recommendation:** Delegate the service to your dedicated SOC AWS account

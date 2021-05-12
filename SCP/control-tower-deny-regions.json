@@ -1,0 +1,47 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyUnapprovedRegionsExceptCT",
+      "Effect": "Deny",
+      "NotAction": [
+        "iam:*",
+        "organizations:*",
+        "route53:*",
+        "budgets:*",
+        "waf:*",
+        "cloudfront:*",
+        "globalaccelerator:*",
+        "importexport:*",
+        "support:*",
+        "ec2:DescribeVolumes",
+        "ec2:Describe*",
+        "ec2:DescribeSnapshots",
+        "directconnect:*",
+        "ec2:DescribeVpnGateways",
+        "ec2:DescribeTransitGateways",
+        "shield:*"
+      ],
+      "Resource": [
+        "*"
+      ],
+      "Condition": {
+        "StringNotEquals": {
+          "aws:RequestedRegion": [
+            "us-west-2",
+            "us-east-1"
+          ]
+        },
+        "ArnNotLike": {
+          "aws:PrincipalARN": [
+            "arn:aws:iam::*:role/AWSControlTowerAdmin",
+            "arn:aws:iam::*:role/AWSControlTowerCloudTrailRole",
+            "arn:aws:iam::*:role/AWSControlTowerStackSetRole",
+            "arn:aws:iam::*:role/*ControlTower*",
+            "arn:aws:iam::*:role/*controltower*"
+          ]
+        }
+      }
+    }
+  ]
+}
