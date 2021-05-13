@@ -5,7 +5,7 @@ read -p "Enter AWS Account ID to delegate Audit Manager: " ACCOUNT_ID
 
 ## TODO Update CLI
 aws organizations enable-aws-service-access --service-principal auditmanager.amazonaws.com
-aws auditmanager register-organization-admin-account --admin-account-id "${ACCOUNT_ID}"
+aws audit-manager register-organization-admin-account --admin-account-id "${ACCOUNT_ID}"
 
 ## TODO Deploy Audit Manager in Management Account
 ## The Management account is not controlled by Organization services and needs the service needs to be enabled
