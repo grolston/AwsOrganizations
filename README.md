@@ -22,8 +22,8 @@ Once updated, select the service you want below and deploy/configure by cutting 
 
 - [Audit Manager](#audit-manager)
 - [CloudFormation Stack Sets](#cloudformation-stack-sets)
-- [CloudTrail][#cloudtrail]
-- [Config][#config]
+- [CloudTrail](#cloudtrail)
+- [Config](#config)
 - [GuarDuty](#guardduty)
 - [IAM Access Analyzer](#iam-access-analyzer)
 - [Macie](#macie)
