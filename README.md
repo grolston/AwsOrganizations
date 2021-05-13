@@ -18,7 +18,16 @@ In your `management account` go to the AWS CloudShell in the appropriate region.
 curl -fsS https://raw.githubusercontent.com/grolston/AwsCloudShell/main/update.sh | bash
 ```
 
-Once updated, select the service you want below and deploy/configure by cutting and paste the command. You will be prompted to enter the account ID to delegate the service to within the organization.
+Once updated, select the service you want below and deploy/configure by cutting and paste the command. You will be prompted to enter the AWS account ID to delegate the service to within the organization.
+
+- [Audit Manager](#audit-manager)
+- [CloudFormation Stack Sets](#cloudformation-stack-sets)
+- [CloudTrail][#cloudtrail]
+- [Config][#config]
+- [GuarDuty](#guardduty)
+- [IAM Access Analyzer](#iam-access-analyzer)
+- [Macie](#macie)
+- [Security Hub](#securityhub)
 
 ### Audit Manager
 
