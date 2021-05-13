@@ -27,7 +27,7 @@ Once updated, select the service you want below and deploy/configure by cutting 
 - [GuarDuty](#guardduty)
 - [IAM Access Analyzer](#iam-access-analyzer)
 - [Macie](#macie)
-- [Security Hub](#securityhub)
+- [Security Hub](#security-hub)
 
 ### Audit Manager
 
