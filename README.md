@@ -1,6 +1,6 @@
 # AWS Organizations Integrated Services Configuration Guide
 
-The following are services to considered for *security* at the AWS Organization level. The list is respective to the order of deployment at the AWS Organization level. Prior to deploying, you will need to clarify/document the roles/teams for security, auditor, operations, etc. These roles will map out to specific enterprise service accounts you will create and then delegate the services to.
+The following are services to considered for *security* at the AWS Organization level. Prior to deploying, you will need to clarify/document the roles/teams for security, auditor, operations, etc. These roles will map out to specific enterprise service accounts you will create and then delegate the services to. Please ensure any prerequisites are met prior to launching. *Some Organization integrated services require other services to be deployed.*
 
 ## Prerequisites
 
